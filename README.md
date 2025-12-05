@@ -35,7 +35,7 @@ streamlit run ui_app.py
 3. **Upload phone numbers:**
    - Upload a CSV/Excel file with phone numbers in a column
    - Or enter numbers manually in the sidebar (one per line)
-   - Numbers must include country code (e.g., +966505815487)
+   - Numbers must include country code (e.g., +966xxxxxxxxx)
 
 4. **Enter message content:**
    - Type your message in the text area
