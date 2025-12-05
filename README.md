@@ -73,9 +73,9 @@ If no matching column is found, it will use the first column.
 ### Phone Number Formats Supported
 
 The app automatically normalizes phone numbers:
-- `966505815487` → `+966505815487`
-- `0551234567` → `+966551234567`
-- `+966505815487` → `+966505815487` (already correct)
+- `966xxxxxxxxx` → `+966xxxxxxxxx`
+- `05xxxxxxxxx` → `+966xxxxxxxxx`
+- `+966xxxxxxxxx` → `+966xxxxxxxxx` (already correct)
 
 Example CSV:
 ```csv
