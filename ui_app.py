@@ -10,7 +10,7 @@ from phone_extractor import extract_from_uploaded_file, normalize_phone_number
 # Language translations
 TRANSLATIONS = {
     'ar': {
-        'title': '📱 مرسل رسائل واتساب',
+        'title': '📱 رسالة واتساب جماعية',
         'upload_files': '📤 رفع الملفات',
         'upload_csv_excel': 'رفع ملف CSV/Excel/Numbers يحتوي على أرقام الهواتف',
         'upload_help': 'يجب أن يحتوي الملف على عمود بأرقام الهواتف',
@@ -20,7 +20,7 @@ TRANSLATIONS = {
         'message_content': '📝 محتوى الرسالة',
         'type_message': 'اكتب رسالتك',
         'upload_image': 'رفع صورة (اختياري)',
-        'phone_numbers_list': '📋 قائمة أرقام الهواتف',
+        'phone_numbers_list': '📋 قائمة الارقام ',
         'total_numbers': 'إجمالي الأرقام',
         'send_messages': '🚀 إرسال الرسائل',
         'clear_all': '🗑️ مسح الكل',
@@ -31,11 +31,11 @@ TRANSLATIONS = {
         'no_content': '❌ يرجى إدخال رسالة أو رفع صورة!',
         'starting': '🚀 بدء إرسال الرسائل...',
         'tips': '💡 نصائح:',
-        'tip1': '- يجب أن تتضمن أرقام الهواتف رمز الدولة (مثل +966 للسعودية)',
-        'tip2': '- يمكنك إرسال نص فقط، أو صورة فقط، أو كليهما',
-        'tip3': '- تأكد من تسجيل الدخول إلى WhatsApp Web قبل الإرسال',
+        'tip1': 'يجب أن تتضمن أرقام الهواتف رمز الدولة (مثل +966 للسعودية)',
+        'tip2': 'يمكنك إرسال نص فقط، أو صورة فقط، أو كليهما',
+        'tip3': 'تأكد من تسجيل الدخول إلى واتساب وب قبل الإرسال',
         'warning_title': '⚠️ تحذير مهم',
-        'warning_text': 'يجب إغلاق جميع تبويبات WhatsApp Web قبل البدء!',
+        'warning_text': 'يجب إغلاق جميع صفحات واتساب وب قبل البدء',
         'language': 'اللغة',
         'arabic': 'العربية',
         'english': 'English',
@@ -119,11 +119,15 @@ with st.sidebar:
         st.session_state.language = language_option
         st.rerun()
 
-# Warning banner at the top
-st.warning(f"⚠️ **{t['warning_title']}**: {t['warning_text']}")
-
 st.title(t['title'])
 st.markdown("---")
+
+# Warning banner at the top
+st.warning(f"⚠️ **{t['warning_title']}**: {t['warning_text']}")
+st.warning(f"{t['tip3']}")
+
+
+
 
 # Sidebar for file upload and settings
 with st.sidebar:
