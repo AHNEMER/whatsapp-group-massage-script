@@ -80,9 +80,9 @@ The app automatically normalizes phone numbers:
 Example CSV:
 ```csv
 phone
-966505815487
-0551234567
-+966541556250
+966xxxxxxxxx
+05xxxxxxxxx
++966xxxxxxxxx
 ```
 
 ## Notes
